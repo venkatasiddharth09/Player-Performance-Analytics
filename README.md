@@ -5,37 +5,25 @@ This project applies Machine Learning techniques to predict cricket player perfo
 
 Collected and cleaned match-by-match batting data (2010–2025).
 
-Utilized feature engineering predictive features such as:
+Utilized feature engineering predictive features such as caluclating rolling averages of runs, strike rate, boundaries (4s/6s), and encoding opposition, venue (home/away), and match format.
 
-Rolling averages of runs, strike rate, boundaries.
-
-Encoded opposition, venue (home/away), and match format.
-
-Batting position.
-
-Built and compared three ML models:
-
-Linear Regression
-
-Random Forest Regressor
-
-XGBoost Regressor
+Built and compared three ML models: Linear Regression, Random Forest Regressor, XGBoost Regressor
 
 Evaluated models using Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R².
 
 # 📊 Key Insights
 
-Rolling averages helped capture recent form and improved predictive stability.
+Rolling averages helped capture recent form of the player and improved predictive stability.
 
-Different formats showed unique patterns (e.g., Test form can vary heavily within a series).
+The model was efficient in predicting results or scores in T20s and ODIs, while it had a hard time predicting close to the runs for Tests. This is because Tests format is extremely versatile and the player has been on and off in their batting form throughout their career.
 
-XGBoost generally gave the most stable results across formats.
+XGBoost and RandomForest Regressor generally gave the most stable results across formats.
 
 # 🛠️ Tech Stack
 
 Python (pandas, numpy, scikit-learn, xgboost, matplotlib, seaborn)
 
-Jupyter Notebook for experimentation and visualization
+Jupyter Notebook for experimentation and visualization of models.
 
 # 📈 Visualizations
 
@@ -43,20 +31,20 @@ Predicted vs. Actual scatter plots for each model.
 
 Feature importance charts to highlight impactful predictors.
 
-# 🔄 Retrospection & Learning
+# 🔄 Retrospection
 
 Initially included match format (T20, ODI, Test) as a single encoded feature in the dataset.
 
-After experimentation, found this reduced model accuracy since player performance varies drastically across formats.
+After experimentation, I found that the formats had partially reduced model accuracy since player performance varied drastically across formats.
 
-Adapted by splitting the dataset by format and training separate models, leading to better insights and more interpretable results.
+Therefore, I adapted by splitting the dataset by format in Excel and training separate models for each dataset, leading to better insights and more interpretable results.
 
 Key takeaway: feature design and dataset organization are as important as model selection.
 
-# 🚀 Future Work
+# 🚀 Future Work/Steps
 
-Extend the framework to multiple players (e.g., bowlers).
+Extend the framework to multiple players (e.g., bowlers, batters, all-rounders).
 
-Add contextual features such as tournament stage or recent series outcomes.
+Add other contextual features such as tournament stage, recent series outcomes, pitch type, bowling strength, match pressure, etc. for better predictivity and model training.
 
 Explore deep learning models for sequence-based predictions.
