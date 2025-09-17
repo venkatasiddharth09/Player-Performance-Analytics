@@ -27,6 +27,14 @@ Python (pandas, numpy, scikit-learn, xgboost, matplotlib, seaborn)
 
 Jupyter Notebook for experimentation and visualization of models.
 
+# 🔧 Model Optimization
+
+Used GridSearchCV to systematically search over parameter grids for Random Forest Regressor.
+
+Tuned key hyperparameters such as n_estimators, max_depth, min_samples_split, min_samples_leaf, and learning_rate.
+
+Implemented a custom manual function to test specific parameter combinations for XGBoost Regression Model and compare RMSE, ensuring robustness in model selection.
+
 # 📈 Visualizations
 
 Predicted vs. Actual scatter plots for each model.
