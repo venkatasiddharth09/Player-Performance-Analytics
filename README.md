@@ -5,7 +5,7 @@ This project applies Machine Learning techniques to predict cricket player perfo
 
 Collected and cleaned match-by-match batting data (2010–2025) using Kaggle and Excel/Python.
 
-Utilized feature engineering predictive features such as caluclating rolling averages of runs, strike rate, boundaries (4s/6s), and encoding opposition, venue (home/away), and match format.
+**Utilized feature engineering predictive features such as** caluclating rolling averages of runs, strike rate, boundaries (4s/6s), and encoding opposition, venue (home/away), and match format.
 
 **Built and compared three ML models:** Linear Regression, Random Forest Regressor, XGBoost Regressor
 
@@ -15,7 +15,7 @@ Evaluated models using Mean Absolute Error (MAE), Mean Squared Error (MSE), Root
 
 Rolling averages helped capture recent form of the player and improved predictive stability.
 
-The model was efficient in predicting results or scores in T20s and ODIs, while it had a hard time predicting close to the runs for Tests. This is because Tests format is extremely versatile and the player has been on and off in their batting form throughout their career.
+The model was efficient in predicting results or scores in T20s and ODIs, while it had a hard time predicting close to the runs for Tests. This is because Tests format is extremely versatile and the player statistics show that he has been on and off in his batting form throughout his career within this format.
 
 **XGBoost and RandomForest** Regressor generally gave the most stable results across formats.
 
