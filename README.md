@@ -1,5 +1,7 @@
 # Cricket Performance Prediction
-This project applies Machine Learning techniques to predict cricket player performance, with a case study focused on Virat Kohli across all three international formats (T20I, ODI, Test).
+
+Machine Learning project predicting Virat Kohli’s match-by-match batting performance across T20, ODI, and Test formats (from 2010–2025) using rolling averages of numerical data, opposition, venue, and other features. 
+Compared Linear Regression, Random Forest, and XGBoost models to observe which model works the best in accurately predicting the runs scored.
 
 # 🔎 Project Overview
 
